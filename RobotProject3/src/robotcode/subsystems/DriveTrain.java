@@ -22,5 +22,7 @@ public class DriveTrain extends Subsystem {
     }
     
     private Talon talon1 = new Talon(1);
-    
+    private Talon talon2 = new Talon(2);
+    private Talon talon3 = new Talon(3);
+    private Talon talon4 = new Talon(4);
 }
