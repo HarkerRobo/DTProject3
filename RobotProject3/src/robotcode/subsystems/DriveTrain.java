@@ -18,12 +18,12 @@ public class DriveTrain extends Subsystem {
         talon3 = new Talon(3);
         talon4 = new Talon(4);
     }    
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
     public Talon getTalon1()
     {return talon1;}
     public Talon getTalon2()
