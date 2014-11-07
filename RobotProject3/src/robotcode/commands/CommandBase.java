@@ -3,6 +3,7 @@ package robotcode.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import robotcode.OI;
+import robotcode.subsystems.DriveTrain;
 
 
 /**
@@ -12,7 +13,8 @@ import robotcode.OI;
  * @author Author
  */
 public abstract class CommandBase extends Command {
-
+    
+    public static DriveTrain driveTrain;
     public static OI oi;
     // Create a single static instance of all of your subsystems
 
@@ -23,7 +25,7 @@ public abstract class CommandBase extends Command {
         // yet. Thus, their requires() statements may grab null pointers. Bad
         // news. Don't move it.
         oi = new OI();
-
+        driveTrain = new DriveTrain();
         // Show what command your subsystem is running on the SmartDashboard
 
     }

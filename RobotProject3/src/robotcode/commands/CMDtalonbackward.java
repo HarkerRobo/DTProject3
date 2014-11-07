@@ -18,15 +18,18 @@ public class CMDtalonbackward extends CommandBase {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        for(int i = 0;i<4;i++)
+          driveTrain.setTalon(i,-1);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     // Called once after isFinished returns true
