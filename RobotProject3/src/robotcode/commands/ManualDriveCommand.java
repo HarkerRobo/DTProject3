@@ -7,14 +7,13 @@ package robotcode.commands;
 
 /**
  *
- * @author Kavya Seth
+ * @author james_000
  */
-public class CMDtaloncustomspeed extends CommandBase {
-    double speed;
-    public CMDtaloncustomspeed(double spd) {
+public class ManualDriveCommand extends CommandBase {
+    
+    public ManualDriveCommand() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-        speed = spd;
     }
 
     // Called just before this Command runs the first time
@@ -23,13 +22,11 @@ public class CMDtaloncustomspeed extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-                for(int i = 0;i<4;i++)
-          driveTrain.setTalon(i,speed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true
