@@ -28,4 +28,12 @@ public class DriveTrain extends Subsystem {
     public void setTalon(int talon, double speed){
         talons[talon].set(speed);
     }
+    public void setLeftTalon(double speed){
+        talons[0].set(speed);
+        talons[1].set(speed);
+    }
+    public void setRightTalon(double speed){
+        talons[2].set(speed);
+        talons[3].set(speed);
+    }
 }   

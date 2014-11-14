@@ -5,14 +5,15 @@ import robotcode.commands.CMDtaloncustomspeed;
 import robotcode.commands.CMDtalonforward;
 import robotcode.commands.CMDtalonstop;
 import robotcode.wrappers.GamepadWrapper;
+import robotcode.wrappers.JoystickButtonWrapper;
 
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-
-    GamepadWrapper gamepad;
+    JoystickButtonWrapper joystick;
+    public static GamepadWrapper gamepad;
     CMDtalonbackward backward;
     CMDtalonforward forward;
     CMDtalonstop stop;
@@ -22,7 +23,7 @@ public class OI {
         gamepad.getButtonA().whenPressed(forward);
         gamepad.getButtonB().whenPressed(backward);
         gamepad.getButtonX().whenPressed(stop);
-        gamepad
+        joystick.
     }
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
